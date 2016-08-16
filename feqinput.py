@@ -190,10 +190,10 @@ class FEQinput(QMainWindow, QDialog, ui_feqinput.Ui_FEQinput):
 %s - %s <br></center>
 <p>This program interprets input files for FEQ version <b>10.61</b> and FEQUTL version <b>5.80</b></p>
 <p>Questions or feedback can be directed to:<br>
-Center Director, USGS Illinois Water Science Center<br>
+Center Director, USGS Illinois-Iowa Water Science Center<br>
 405 N Goodwin Ave, Urbana, IL 61801<br>
 Tel: (217) 328-8747<br>
-E-mail: <a href="mailto:dc_il@usgs.gov">dc_il@usgs.gov</a><br></p>
+E-mail: <a href="mailto:dc_ilia@usgs.gov">dc_ilia@usgs.gov</a><br></p>
 <p><b>Disclaimer</b>:</p>
 <p>This software has been approved for release by the U.S. Geological Survey (USGS). 
 Although the software has been subjected to rigorous review, the USGS reserves the right 
