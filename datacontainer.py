@@ -1,19 +1,11 @@
 from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
-from future_builtins import *
 
 import bisect
-import codecs
-import copy_reg
-import pickle
-import gzip
 import re
 from PyQt4.QtCore import (QDataStream, QDate, QFile, QFileInfo,
         QIODevice, QString, QTextStream, Qt)
-from PyQt4.QtCore import pyqtSignal as Signal
-#from PyQt4.QtXml import (QDomDocument, QDomNode, QXmlDefaultHandler,
-#        QXmlInputSource, QXmlSimpleReader)
 
 #This is the data container for FEQinput. It will manage the data of the
 #input files
@@ -4216,8 +4208,8 @@ class DataContainer(object):
                     fraction = "no fraction"
                 
                 textback += """<b>FRACTION</b> - Detention storage fraction: <font color=blue>%s</font> <br><br>
-                            This variable request detention storage. It is followed by the identifier
-                            name <b>FRACTION</b>(defines what fraction of the tributary area be subjected to
+                            This variable requests detention storage. It is followed by the identifier
+                            name <b>FRACTION</b> (defines what fraction of the tributary area is subjected to
                             detention).<br><br>
 
                             Example:<br>
@@ -4294,8 +4286,8 @@ class DataContainer(object):
             textback = """<b>Network Matrix Control</b><br><br>"""
 
             if rcode == "MX1":
-                textback += """This code identifies a branch: <font color=blue>%s</font>
-                            <br><br>"""
+                textback += """Code <font color=blue>1</font>: This code identifies a branch.<br><br>
+                    """
 
                 maxee = len(rtext)
                 cc = 5
@@ -4377,8 +4369,8 @@ class DataContainer(object):
                 nodes.replace(" ","<br>")
                 while "<br><br>" in nodes:
                     nodes.replace("<br><br>","<br>")
-                textback += """Number of nodes at a junction: <font color=blue>%s</font><br><br>
-                            Number of nodes: <br><br>
+                textback += """Code <font color=blue>2</font>: Number of nodes at a junction.<br><br>
+                            Number of nodes: <font color=blue>%s</font><br><br>
                             Nodes: <font color=blue>%s</font><br><br>
                             Comments: <font color=blue>%s</font><br><br><br>
 
@@ -4420,7 +4412,8 @@ class DataContainer(object):
                         break
                 n2 = rtext[st:cc]
                 com = rtext[cc:]
-                textback += """Code: <font color=blue>3</font><br><br>
+                textback += """Code <font color=blue>3</font>: Equality of water surface elevation between
+                            nodes.<br><br>
                             Water surface elevations
                             will be equal between nodes <font color=blue>%s</font> and
                             <font color=blue>%s</font>.<br><br>
