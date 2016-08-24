@@ -59,23 +59,18 @@ class DataContainer(object):
     def __iter__(self):
         for pair in iter(self.__datalist):
             yield pair[1]
-            
+
 
     def load(self, fname=QString()):
         if not fname.isEmpty():
             self.__fname = fname
         return self.loadQTextStream()
-        return False, "Failed to load: invalid file extension"
-    
 
     def loadFTL(self, fname=QString()):
         if not fname.isEmpty():
             self.__fname = fname
         return self.loadQTextStreamFTL()
-        return False, "Failed to load: invalid file extension"
 
-
-  
     def loadQTextStream(self):
         error = None
         fh = None
@@ -1779,7 +1774,7 @@ class DataContainer(object):
                     code = "EXTE"
                 elif line.startsWith("FEQX"):                           #FEQX block
                     if line.startsWith("FEQXLST"):
-                        code = "FEQXL"
+                        code = "FEQXLST"
                         while not "-1" in line:
                             self.add(DataText(linenumber, code, todisplay))
                             line = stream.readLine()
@@ -1788,7 +1783,7 @@ class DataContainer(object):
                             todisplay = line
                     else:
                         if line.startsWith("FEQXEXT"):
-                            code = "FEQXE"
+                            code = "FEQXEXT"
                         else:
                             code = "FEQX"
                         while not " -1" in line[20:25]:
@@ -9059,13 +9054,11 @@ class DataContainer(object):
             textback = "Cannot interpret."
         return textback
 
-
     def interpretFTL(self, rcode, rtext):
 
         if rcode == "TITLE":                                           #Headings
             textback = """<b></b>The first three lines of the file are no longer used but
                         required for the program to run correctly."""
-
 
         elif rcode == "COM":                                           #Comments
             textback = """Comment:<br>
@@ -9084,6 +9077,7 @@ class DataContainer(object):
                         <br><br>
                         <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
                         target="_blank">Search Tool</a>"""
+
         elif rcode == "DZLI":
             textback = """<b>DZLIM</b> - Minimum water-surface height increment in output table;
                         must be &#62; 0: <font color=blue>%s</font><br><br>""" % rtext[6:]
@@ -9194,7 +9188,9 @@ class DataContainer(object):
                                 NOTE: The internal control number should not be changed""" 
 
         elif rcode.startsWith("FEQX"):                                          #FEQX block
-            textback = """<b>Cross-section function tables.</b><br><br>"""
+            textback = """COMMAND NAME: <b>%s</b><br><br>
+            Computes elements of a cross section and outputs a cross section function table.<br><br>
+            """ % rcode
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment: <font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("TABLE") or rtext.startsWith("TABID") or "EXTEND" in rtext \
@@ -9499,10 +9495,11 @@ class DataContainer(object):
                         <br><br>
                         <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
                         target="_blank">Search Tool</a>"""
-            
 
         elif rcode == "FTAB":                                          #FTAB
-            textback = """<b>Function tables</b><br><br>"""
+            textback = """COMMAND NAME: <b>FTABIN</b><br><br>
+            Inputs one or more function tables in the same format as used by FEQ.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comments: <font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("FTABIN"):
@@ -9579,7 +9576,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
 
         elif rcode.startsWith("CULV"):                                 # CULVERT
-            textback = """<b>FLOW THROUGH CULVERT</b><br><br>"""
+            textback = """COMMAND NAME: <b>CULVERT</b><br><br>
+            Computes flow through culverts and over the associated roadway.<br><br>
+            """
             if rcode.startsWith("CULVo"):
                 culvert = rcode[5:]
                 culvert.replace(" ","")
@@ -9907,8 +9906,11 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "CHAR":                                          #CHANRAT
-            textback = """<b>FLOW THROUGH A SHORT, PRISMATIC CHANNEL THAT SIMULATES
-                        OVERBANK FLOW</b><br><br>"""
+            textback = """COMMAND NAME: <b>CHANRAT</b><br><br>
+            Computes the flows for each of a series of upstream heads on a short prismatic channel as the head on the
+            downstream end of the channel varies from that causing critical flow to the value matching the upstream
+            head.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("TABLE"):
@@ -9990,7 +9992,10 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
             
         elif rcode.startsWith("EMBA"):                                 #EMBANKQ block
-            textback = """<b>FLOW OVER EMBANKMENT-SHAPED WEIRS</b><br><br>"""
+            textback = """COMMAND NAME: <b>EMBANQ</b><br><br>
+            Computes flow over embankments or other weir-like structures. Can also compute flow over a variety of weirs
+            if the proper tables are provided.<br><br>
+            """
             if rcode.startsWith("EMBAo"):
                 embankq = rcode[5:]
                 embankq.replace(" ","")
@@ -10146,7 +10151,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
             
         elif rcode.startsWith("EXPC"):                                        #EXPCON
-            textback = """<b>FLOW THROUGH A CHANNEL TRANSITION</b><br><br>"""
+            textback = """COMMAND NAME:<b>EXPCON</b><br><br>
+            Computes flow through an expansion-contraction and produces a two-dimensional table.<br><br>
+            """
             if rtext.startsWith("SMOOTH"):
                 textback += """<b>SMOOTH</b> - Velocity difference for smoothing the losses near the point
                             of zero difference in velocity head: <font color=blue>%s</font>""" % rtext[7:]
@@ -10250,8 +10257,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "MULC":                                                 #MULCON
-            textback = """<b>Cross-section of conduits</b><br>A single cross-section function  table is computed in the MULCON command
-                    to represent the hydraulic characteristics of one or more conduits.<br>"""
+            textback = """COMMAND NAME: <b>MULCON</b><br><br>
+            Computes the elements for one or more conduits that may be circular, box, true elliptical, nominal
+            elliptical, reinforced concrete arch pipe, or corrugated metal arch.<br><br>"""
 
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """<br><br>Comment:<br><font color=blue>%s</font>""" % rtext[1:]
@@ -11064,9 +11072,11 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
                         target="_blank">Search Tool</a>"""
             
-        elif rcode == "QLIM":                                           #QLIM
-            textback = """<b>Free-flow limit</b><br>Estimate ofthe maximum flow of a closed
-                        conduit when the conduit is flowing full.<br><br>"""
+        elif rcode == "QLIM":                                           #QCLIMIT
+            textback = """COMMAND NAME: <b>QCLIMIT</b><br><br>
+            Sets a limit on the critical flow rate in a closed conduit so that EXPCON computations will be suitable
+            with one or both cross sections being a closed conduit.<br><br>
+            """
             if rtext.startsWith("TABLE"):
                 textback += """<b>TABLE</b> - Table number: <font color=blue>%s</font>""" % rtext[7:]
             elif rtext.startsWith("TABID"):
@@ -11086,8 +11096,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "SEWR":                                          #SEWER
-            textback = """<b>Cross-section of circular conduits</b><br>A cross section function table is computed in the sewer
-                        command only for the barrel of a culvert or for a storm sewer.<br><br>"""
+            textback = """COMMAND NAME: <b>SEWER</b><br><br>
+            Computes the elements for a circular section.<br><br>
+            """
             if rtext.startsWith("TABLE#") or rtext.startsWith("TABID"):
                 textback += """<b></b><b>%s</b>""" % rtext.split('=')[0] 
                 textback += """ - Table number: <font color=blue>%s</font><br><br><u>Table options:</u>""" % rtext[7:12] 
@@ -11197,8 +11208,10 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "CRITQ":                                      #CRITQ
-            textback = """<b>Critical flow in a constricted section</b><br> as a function of the depth of water in an approach
-                        section<br><br>"""
+            textback = """COMMAND NAME: <b>CRITQ</b><br><br>
+            Computes critical flow in a given cross section on the assumption that this cross section represents a
+            constriction to the flow.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment: <font color=blue>%s</font>""" % rtext
             elif rtext.startsWith("TABID"):
@@ -11261,7 +11274,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "GRIT":                                       #GRITTER
-            textback = """<b>Peak outflow solution following instantaneous failure of a dam.</b><br><br>"""
+            textback = """COMMAND NAME: <b>GRITTER</b><br><br>
+            Solves the generalized Ritter dam break problem for the flood peak and the stage at the dam site.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment: <font color=blue>%s</font>""" % rtext
             elif rtext.startsWith("APPTAB"):
@@ -11297,7 +11312,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "MULP":                                       #MULPIPES
-            textback = """<b>Hydraulic characteristics of circular conduits.</b><br><br>"""
+            textback = """COMMAND NAME: <b>MULPIPES</b><br><br>
+            Computes the elements for one or more circular sections.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("TABID"):
@@ -11391,7 +11408,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "XSIN":                                       #XSINTERP
-            textback = """<b>Computation of cross section tables by interpolation.</b><br><br>"""
+            textback = """COMMAND NAME: <b>XSINTERP</b><br><br>
+            Interpolates for one or more cross section tables given two or more existing cross section tables.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext
             elif rtext.startsWith("SFAC"):
@@ -11427,7 +11446,10 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "HEC2":                                       #HEC2X
-            textback = """<b>Load HEC-2 input file.</b><br><br>"""
+            textback = """COMMAND NAME: <b>HEC2X</b><br><br>
+            Searches through a HEC-2 input file and extracts the cross sections in a format suitable for FEQ and FEQUTL.
+            <br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("MODE"):
@@ -11551,8 +11573,10 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "CHAN":                                       #CHANNEL
-            textback = """<b>Hydraulic properties of a cross section including the
-                        correction factors for curvilinearity.</b><br><br>"""
+            textback = """COMMAND NAME: <b>CHANNEL</b><br><br>
+            Computes the sinuosity for a series of flow lines and uses FEQX, FEQXLST, or FEQXEXT to compute cross
+            section function tables that include the curvilinear elements.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("SINDEF"):
@@ -11590,7 +11614,6 @@ class DataContainer(object):
             elif rtext.startsWith("END"):
                 textback += """End of section or block."""
 
-
             textback += """<br><br><br>
 
                         <a href="http://il.water.usgs.gov/proj/feq/fequtl/chap5html/fequtl.chap5_4.html"
@@ -11601,10 +11624,12 @@ class DataContainer(object):
                         <br><br>
                         <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
                         target="_blank">Search Tool</a>"""
-            
 
         elif rcode == "UFGT":                                       #UFGATE
-            textback = """<b>Underflow gate (sluice or tainter)</b><br><br>"""
+            textback = """COMMAND NAME: <b>UFGATE</b><br><br>
+            Computes a description of an under flow gate with a variable setting. Includes sluice and tainter gates.
+            <br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("TABLE"):
@@ -11712,7 +11737,9 @@ class DataContainer(object):
                         target="_blank">Search Tool</a>"""
 
         elif rcode.startsWith("ORIF"):                                       #ORIFICE
-            textback = "<b>Flow through a vertical orifice</b><br><br>"""
+            textback = """COMMAND NAME: <b>ORIFICE</b><br><br>
+            Computes flow through orifices of various shapes.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("TABLE"):
@@ -11775,7 +11802,9 @@ class DataContainer(object):
                 textback += """Table headers:<br><font color=blue>%s</font>""" % rtext
 
         elif rcode == "AXLP":                                       #AXIALPMP
-            textback = """<b>Axial-flow pump</b><br><br>"""
+            textback = """COMMAND NAME: <b>AXIALPMP</b><br><br>
+            Computes one or more pump-capacity tables given the design flow and head for the pump.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("QUNIT"):
@@ -11817,7 +11846,10 @@ class DataContainer(object):
                 textback += """Table headers.<br><br> Note: The headers cover up to three lines"""
 
         elif rcode == "PMPL":                                       #PUMPLOSS
-            textback = """<b>Losses for the inlet and outlet conduits of pumps</b><br><br>"""
+            textback = """COMMAND NAME:<b>PUMPLOSS</b><br><br>
+            Computes one or more pump-loss tables to represent the losses that occur in the inlet, inlet conduit, and
+            outlet conduit for a pump.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("QUNIT"):
@@ -11858,7 +11890,9 @@ class DataContainer(object):
                 textback += """Table headers.<br><br> Note: The headers cover up to three lines"""
 
         elif rcode == "SETS":                                       #SETSLOT
-            textback = """<b>Bottom slot parameters</b><br><br>"""
+            textback = """COMMAND NAME: <b>SETSLOT</b><br><br>
+            Defines the slot characteristics to be used for all subsequent cross section table computations.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("WSLOT"):
@@ -11873,8 +11907,11 @@ class DataContainer(object):
                             %s</font>""" % rtext[6:]
 
         elif rcode == "LPRF":                                       #LPRFIT
-            textback = """<b>Level-pool reservoir</b><br>
-                        Estimates surface area when only storage capacity is known.<br><br>"""
+            textback = """COMMAND NAME: <b>LPRFIT</b><br><br>
+            Fits a capacity function for a level pool reservoir with a user-selected piecewise polynomial function to
+            define a surface area that is consistent with the given capacity and also satisfies some constraints on
+            variation of storage and surface area.<br><br>
+            """
             if rtext.startsWith(";") or rtext.startsWith("*"):
                 textback += """Comment:<br><font color=blue>%s</font>""" % rtext[1:]
             elif rtext.startsWith("TABID"):
@@ -11928,15 +11965,15 @@ class DataContainer(object):
                 textback += """Argument and function values (Heading dependent)"""
             else:
                 textback += """Table headers: <font color=blue>%s</font>""" % rtext
-                
-            
-                
-    
+
         elif rcode == "blank":
             textback = "blank line"
 
         elif rcode == "FIN":                                        #Finish
-            textback = """End of file."""
+            textback = """COMMAND NAME: <b>FINISH</b><br><br>
+            Used to terminate processing by FEQUTL.
+            """
+
         else:
             textback = "Cannot interpret."
 

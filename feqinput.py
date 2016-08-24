@@ -1,20 +1,10 @@
 from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
-from future_builtins import *
-#FEQinput
-__version__ = "1.0"
-__nickname__ = ""
-__date__ = "Jul/14/2016"
-#Developers:
-#David S Ancalle (Hydrology Trainee at USGS Illinois Water Science Center)
-#Pablo J Ancalle (Computer Intern at USGS Illinois Water Science Center)
 
 import os
 from subprocess import call
-import platform
 import sys
-import re
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from PyQt4.QtWebKit import (QWebView, QWebSettings)
@@ -22,13 +12,21 @@ import ui_feqinput
 import datacontainer
 import mapview
 import searchwindow
-import resources_rc
 import ctypes
+
+# FEQinput
+__version__ = "1.0"
+__nickname__ = ""
+__date__ = "Jul/14/2016"
+# Developers:
+# David S Ancalle (Hydrology Trainee at USGS Illinois Water Science Center)
+# Pablo J Ancalle (Computer Intern at USGS Illinois Water Science Center)
+
 
 class FEQinput(QMainWindow, QDialog, ui_feqinput.Ui_FEQinput):
 
-# =================================================================================
-#GUI setup
+    # =================================================================================
+    # GUI setup
     
     def __init__(self, parent=None):
         super(FEQinput, self).__init__(parent)
