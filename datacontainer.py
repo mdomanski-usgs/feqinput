@@ -2878,7 +2878,7 @@ class DataContainer(object):
         explabel = {}
 
 # ===================================================================================
-#INTERPRET
+# INTERPRET
 
     def interpret(self, rcode, rtext):
         
@@ -6415,8 +6415,8 @@ class DataContainer(object):
                                 """ % (mtype, n2, n3, n4, n5, com)
 
                 elif mtype == "6":
-                    while rtext[cc:ee] == " ":                                                       #
                         cc += 1                                                                      #
+                    while rtext[cc:ee] == " ":                                                       #
                         ee = cc + 1                                                                  # ------------------------------------------
                         if ee > maxee:                                                               # Here the code will read and assign a value
                             break                                                                    # to variable 'n5'
@@ -9366,12 +9366,14 @@ class DataContainer(object):
                 textback += """<br><b>NSUB</b>: Number of subsections: <font color=blue>%s</font><br>
                             <br><b>N</b>: Manning's <i>n</i> for each subsection:
                             <font color=blue>%s</font>""" % (nsub, manning)
+            elif rtext.trimmed().startsWith("OFFSET") and rcode == "FEQX":
+                textback+= """Table headers: <br><font color=blue>%s</font>""" % rtext
             elif rtext.startsWith(" ") and rcode == "FEQX":
                 textback += """<b>Offset</b>: <font color=blue>%s</font><br><br>""" % rtext[0:10]
                 textback += """<b>Elevation</b>: <font color=blue>%s</font><br><br>""" % rtext[10:20]
                 textback += """<b>Subsection number</b>: <font color=blue>%s</font><br><br>""" % rtext[20:25]
                 textback += """<b>Additional information</b>:<br> <font color=blue>%s</font>""" % rtext[25:]
-            elif rtext.startsWith(" ") and rcode == "FEQXE":
+            elif rtext.startsWith(" ") and rcode == "FEQXEXT":
                 a = 0
                 b = 1
                 while " " in rtext[a:b]:
@@ -9446,8 +9448,10 @@ class DataContainer(object):
                 textback += """<b>Manning's <i>n</i> at Y=0</b>:<br> <font color=blue>%s</font><br><br>""" % rtext[SB:N0]
                 textback += """<u>Variation of Manning's <i>n</i></u>:<br>
                             Y=%s n=%s""" % (rtext[N0:Y1], rtext[Y1:N1])
+            elif rcode.compare(rtext) == 0:
+                pass
             else:
-                if rcode == "FEQXL":
+                if rcode == "FEQXLST":
                     if "." in rtext:
                         a = 0
                         b = 1
@@ -9472,17 +9476,23 @@ class DataContainer(object):
                         sub = rtext[e:]
                         textback += """<b>Offset</b>: <font color=blue>%s</font><br><br>""" % offset
                         textback += """<b>Elevation</b>: <font color=blue>%s</font><br><br>""" % elev
-                        textback += """<b>Subsection number</b>: <font color=blue>%s</font><br><br>""" % sub                        
+                        textback += """<b>Subsection number</b>: <font color=blue>%s</font><br><br>""" % sub
+                    #elif rcode.compare(rtext) == 0:
+                    #    pass
                     else:
                         textback += """Table headers: <br><font color=blue>%s</font>""" % rtext
-                elif rcode == "FEQXE":
+                elif rcode == "FEQXEXT":
                     if rtext.startsWith("VARN"):
                         textback += """<b>VARN</b>- variation of manning's <i>n</i>: <font color=blue>%s</font><br><br>
                                     <u>NCON</u>: constant n<br>
                                     <u>HYDY</u>: n varies with hydraulic depth<br>
                                     <u>MAXY</u>: n varies with maximum water-surface height<br>""" % re.split('VARN\s*=', rtext)[-1]
+                    elif rcode.compare(rtext) == 0:
+                        pass
                     else:
                         textback += """Table headers: <br><font color=blue>%s</font>""" % rtext
+                #elif rcode.compare(rtext) == 0:
+                    #pass
                 else:
                     textback += """Table headers: <font color=blue>%s</font>""" % rtext
             textback += """<br><br><br>
@@ -9893,7 +9903,8 @@ class DataContainer(object):
                                 <b>NORTHING</b> - The northing or y value for the coordinate system: 
                                 <font color=blue>%s</font>""" % (rtext[8:a], rtext[a+9:])
                 else:
-                    textback += """Label:<br><font color=blue>%s</font>""" % rtext
+                    pass
+                    # textback += """Label:<br><font color=blue>%s</font>""" % rtext
             textback += """<br><br><br>
 
                         <a href ="http://il.water.usgs.gov/proj/feq/fequtl/chap5html/fequtl.chap5_7.html"
@@ -9979,7 +9990,8 @@ class DataContainer(object):
                 textback += """Upstream head to use in computing
                             the 2D table: <font color=blue>%s</font>""" % rtext
             else:
-                textback += """Header: <font color=blue>%s</font>""" % rtext
+                pass
+                # textback += """Header: <font color=blue>%s</font>""" % rtext
             textback += """<br><br><br>
 
                         <a href ="http://il.water.usgs.gov/proj/feq/fequtl/chap5html/fequtl.chap5_5.html"
@@ -10186,6 +10198,8 @@ class DataContainer(object):
                 if "UNITSYS" in rtext:
                     unitsys = rtext.split('UNITSYS=')[1]
                     textback += """<br><br><b>UNITSYS</b> - The unit system: <font color=blue>%s</font>""" % re.split('\s+', unitsys)[0]
+            elif rtext.compare("EXPCON") == 0:
+                pass
             else:
                 linestart = rtext
                 rtext = str(rtext)
@@ -11191,6 +11205,9 @@ class DataContainer(object):
                 if "UNITSYS" in rtext:
                     unitsys = re.split("\s*UNITSYS\s*=\s*", rtext)[-1]
                     textback += """<br><br><b>UNITSYS</b> - The unit system: <font color=blue>%s</font>""" % re.split('/s+', unitsys)[0]
+            #elif rtext.compare("SEWER") == 0:
+            elif str(rtext).strip() == "SEWER":
+                pass
             else:
                 rtext.replace(" ","<br>")
                 while "<br><br>" in rtext:
@@ -11259,6 +11276,8 @@ class DataContainer(object):
                     textback += """<b>EASTING</b> - The easting or x value for the coordinate system: <font color=blue>%s</font><br><br>
                                 <b>NORTHING</b> - The northing or y value for the coordinate system: 
                                 <font color=blue>%s</font>""" % (rtext[8:a], rtext[a+9:])
+            elif rcode.compare(rtext) == 0:
+                pass
             else:
                 textback += """<font color=blue>%s</font><br><br>
                             Column headings label""" % rtext
@@ -11298,6 +11317,8 @@ class DataContainer(object):
                 textback += """
                             <b>DEPTH</b> - The before-failure, water-surface height in the reservoir: <font color=blue>%s</font><br><br>
                             <b>DISCHARGE</b> - Before-failure flow rate in the reservoir: <font color=blue>%s</font>""" % (y, Q)
+            elif str(rtext).strip() == "GRITTER":
+                pass
             else:
                 textback += """Table headers:<br><font color=blue>%s</font>""" % rtext
             textback += """<br><br><br>
@@ -11961,6 +11982,8 @@ class DataContainer(object):
                 textback += """<b>OUTFAC</b> - External unit conversion factor: <font color=blue>%s</font>""" % rtext[8:].split("'")[0]
             elif rtext.startsWith("ARGFAC"):
                 textback += """<b>ARGFAC</b> - Argument sequence conversion factor: <font color=blue>%s</font>""" % rtext[7:]
+            elif rtext.trimmed().compare("LPRFIT") == 0:
+                pass
             elif "." in rtext:
                 textback += """Argument and function values (Heading dependent)"""
             else:
