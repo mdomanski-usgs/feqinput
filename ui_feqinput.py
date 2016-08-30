@@ -1061,7 +1061,7 @@ class Ui_FEQinput(object):
         self.actionReload.setText(_translate("FEQinput", "Reload", None))
         self.actionReload.setShortcut(_translate("FEQinput", "Ctrl+Shift+R", None))
         self.actionMulti_line_Text.setText(_translate("FEQinput", "Multi-line Text", None))
-        self.actionUser_Guide.setText(_translate("FEQinput", "User Guide", None))
+        self.actionUser_Guide.setText(_translate("FEQinput", "Fact Sheet", None))
         self.actionGraphs.setText(_translate("FEQinput", "Graphs", None))
         self.actionGraphs.setShortcut(_translate("FEQinput", "Ctrl+G", None))
 

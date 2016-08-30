@@ -179,7 +179,8 @@ class FEQinput(QMainWindow, QDialog, ui_feqinput.Ui_FEQinput):
         tempFile.remove()
 
     def FEQinputUserManual(self):
-        os.startfile("usermanual.pdf")
+        # os.startfile("usermanual.pdf")
+        os.startfile("fact_sheet.pdf")
 
 
     def helpAbout(self):
@@ -742,7 +743,8 @@ its authorized or unauthorized use.</p>
             fname = None
         
         if os.path.isfile("FEQ-GDI.jar"):
-            os.system("FEQ-GDI.jar %s" % fname)
+            # os.system("FEQ-GDI.jar %s" % fname)
+            os.system("javaw -jar FEQ-GDI.jar %s" % fname)
         else:
             ctypes.windll.user32.MessageBoxW(0, "Missing file error. - Unable to find locale FEQ-GDI.jar file", "Error", 0)
             return
