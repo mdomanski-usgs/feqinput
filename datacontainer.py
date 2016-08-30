@@ -6415,8 +6415,8 @@ class DataContainer(object):
                                 """ % (mtype, n2, n3, n4, n5, com)
 
                 elif mtype == "6":
-                        cc += 1                                                                      #
                     while rtext[cc:ee] == " ":                                                       #
+                        cc += 1                                                                      #
                         ee = cc + 1                                                                  # ------------------------------------------
                         if ee > maxee:                                                               # Here the code will read and assign a value
                             break                                                                    # to variable 'n5'
