@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\ancalle\Documents\FEQinput\sc\feqinput.ui'
+# Form implementation generated from reading ui file ''
 #
 # Created: Mon Sep 14 09:53:47 2015
 #      by: PyQt4 UI code generator 4.11.3
@@ -209,7 +209,7 @@ class Ui_FEQinput(object):
         self.gridLayout_2 = QtGui.QGridLayout()
         self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
         self.textButton = QtGui.QPushButton(self.MainWorkspace)
-        self.textButton.setEnabled(True)
+        self.textButton.setEnabled(False)
         self.textButton.setMinimumSize(QtCore.QSize(71, 31))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(63, 72, 204))
@@ -984,6 +984,7 @@ class Ui_FEQinput(object):
         self.actionReload.setObjectName(_fromUtf8("actionReload"))
         self.actionMulti_line_Text = QtGui.QAction(FEQinput)
         self.actionMulti_line_Text.setObjectName(_fromUtf8("actionMulti_line_Text"))
+        self.actionMulti_line_Text.setEnabled(False)
         self.actionUser_Guide = QtGui.QAction(FEQinput)
         self.actionUser_Guide.setObjectName(_fromUtf8("actionUser_Guide"))
         self.actionGraphs = QtGui.QAction(FEQinput)

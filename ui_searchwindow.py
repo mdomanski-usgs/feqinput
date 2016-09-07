@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\ancalle\Documents\FEQinput\sc\searchwindow.ui'
+# Form implementation generated from reading ui file ''
 #
 # Created: Tue Jul 21 15:00:02 2015
 #      by: PyQt4 UI code generator 4.11.3
