@@ -1713,9 +1713,6 @@ class DataContainer(object):
                     len(self.__datalist),
                     QFileInfo(self.__fname).fileName())
 
-
-
-
     def loadQTextStreamFTL(self):
         error = None
         fh = None

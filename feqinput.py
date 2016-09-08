@@ -748,7 +748,8 @@ its authorized or unauthorized use.</p>
         
         if os.path.isfile("FEQ-GDI.jar"):
             # os.system("FEQ-GDI.jar %s" % fname)
-            os.system("javaw -jar FEQ-GDI.jar %s" % fname)
+            # os.system("javaw -jar FEQ-GDI.jar %s" % fname)
+            call(["javaw", "-jar", "FEQ-GDI.jar", fname])
         else:
             ctypes.windll.user32.MessageBoxW(0, "Missing file error. - Unable to find locale FEQ-GDI.jar file", "Error", 0)
             return
