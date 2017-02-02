@@ -2938,7 +2938,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
             
         elif rcode == "NBRA":                                          #Run Control Block
@@ -2953,7 +2953,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[5:]
             
         elif rcode == "NEX":
@@ -2969,7 +2969,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[4:]
             
         elif rcode == "SOPER":
@@ -2996,7 +2996,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                 
         elif rcode == "POINT":
@@ -3023,7 +3023,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                 
         elif rcode == "DIFFUS": #add DIFFUS numerical values (from manual)
@@ -3052,7 +3052,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "MINPRT":
@@ -3076,7 +3076,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "LAGTSF":
@@ -3087,7 +3087,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                 
 
@@ -3115,7 +3115,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "UNDERF":
@@ -3135,7 +3135,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "ZL":
@@ -3151,7 +3151,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (rtext[3:], rtext[3:])
                 
         elif rcode == "STIME":
@@ -3179,7 +3179,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
         elif rcode == "ETIME":
@@ -3206,7 +3206,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
         elif rcode == "GRAV":
@@ -3229,7 +3229,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "NODEID":
@@ -3252,7 +3252,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "SSEPS":
@@ -3270,7 +3270,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
         elif rcode == "PAGE":
@@ -3283,7 +3283,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[5:]
 
         elif rcode == "EPSSYS":
@@ -3303,7 +3303,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "ABSTOL":
@@ -3319,7 +3319,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "EPSFAC":
@@ -3332,7 +3332,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]            
         
         elif rcode == "MKNT":
@@ -3346,7 +3346,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[5:]
 
         elif rcode == "NUMGT":
@@ -3362,7 +3362,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
         elif rcode == "OUTPUT":
@@ -3377,7 +3377,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "PRTINT":
@@ -3390,7 +3390,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "DPTIME":
@@ -3404,7 +3404,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "GEQOPT":
@@ -3432,7 +3432,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "EPSB":
@@ -3446,7 +3446,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[5:]
 
         elif rcode == "MAXIT":
@@ -3465,7 +3465,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
         elif rcode == "SFAC":
@@ -3480,7 +3480,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[5:]
 
         elif rcode == "TAUFAC":
@@ -3493,7 +3493,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "QSMALL":
@@ -3514,7 +3514,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
         elif rcode == "QCHOP":
             textback = """<b>QCHOP</b> - Truncation level for output of flows: <font color=blue>%s</font><br><br>
@@ -3537,7 +3537,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % ifrz
 
         elif rcode == "MAXDT":
@@ -3565,7 +3565,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % text
 
         elif rcode == "MINDT":
@@ -3577,7 +3577,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "AUTO":
@@ -3590,7 +3590,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
         elif rcode == "SITER":
@@ -3608,7 +3608,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
 
         elif rcode == "LFAC":
@@ -3630,7 +3630,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
 
 
@@ -3647,7 +3647,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" 
 
         elif rcode == "FAC":
@@ -3659,7 +3659,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[4:]
 
         elif rcode == "DWT":
@@ -3673,7 +3673,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[4:]
 
         elif rcode == "BWT":
@@ -3686,7 +3686,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[4:]
 
         elif rcode == "BWFDSN":
@@ -3704,7 +3704,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "CHKGEO":
@@ -3726,7 +3726,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "ISTYLE":
@@ -3749,7 +3749,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "GENSCN":
@@ -3789,7 +3789,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "EXTTOL":
@@ -3809,7 +3809,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "SQREPS":
@@ -3825,7 +3825,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
         elif rcode == "OLD":
@@ -3838,7 +3838,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[12:]
 
 
@@ -3860,7 +3860,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % properties
 
             elif rtext.startsWith(" NODE"):
@@ -3875,7 +3875,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % headings
 
             elif rtext.startsWith(";") or rtext.startsWith("*"):
@@ -3887,7 +3887,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
 
             elif " -1" in rtext or rtext == "-1":
@@ -3899,7 +3899,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
             else:
@@ -3974,7 +3974,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (nodeH, nodeidH, xnumH, stationH, elevationH, \
                                        kaH, kdH, htabH, azmH, cfH, ycH)
                 
@@ -3990,7 +3990,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[5:]
 
             elif rtext.startsWith("TSFDSN"):
@@ -4003,7 +4003,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
             elif rtext.startsWith("TSFNAM"):
@@ -4016,7 +4016,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
             elif rtext.startsWith("FFFDSN"):
@@ -4030,7 +4030,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
             elif rtext.startsWith("FFFNAM"):
@@ -4044,7 +4044,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[7:]
 
             elif rtext.startsWith("NLUSE"):
@@ -4057,7 +4057,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>
                             """ % rtext[6:]
 
@@ -4072,7 +4072,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
             elif rtext.startsWith(" ") and "GAGE" in rtext:
@@ -4085,7 +4085,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
 
             elif rtext.startsWith(" ") and not "GAGE" in rtext:
@@ -4097,7 +4097,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
             elif rtext.startsWith(";") or rtext.startsWith("*"):
@@ -4109,7 +4109,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
 
             else:
@@ -4121,7 +4121,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode.startsWith("TBRA"):
@@ -4136,7 +4136,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
             elif rtext.startsWith("BRANCH"):
@@ -4153,7 +4153,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % prop
 
             elif rtext.startsWith(" NODE"):
@@ -4170,7 +4170,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % headrs
 
             elif rtext.startsWith("*") or rtext.startsWith(";"):
@@ -4182,7 +4182,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
 
             elif rtext.startsWith("DLAY"):
@@ -4255,7 +4255,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>
                             """ % (tnodeH, tgageH, timprvH, tfgrssH, tmgrssH, \
                                    tsgrssH, tforstH, tagricH, ttotalH, comments)
@@ -4271,7 +4271,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
 
         elif rcode.startsWith("MX"):
@@ -4317,7 +4317,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % com
             
             elif rcode == "MX2":
@@ -4372,7 +4372,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (n1, nodes, com)
 
             elif rcode == "MX3":
@@ -4418,7 +4418,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (n1, n2, com)
 
             elif rcode == "MX4":                                                                   # Matrix for CODE 4
@@ -5054,7 +5054,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
 
@@ -7268,7 +7268,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                                 
 
@@ -7442,7 +7442,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                                    
 
@@ -7604,7 +7604,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
             elif rcode == "MX8":
@@ -7622,7 +7622,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                 
 
@@ -7635,7 +7635,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[:5]
 
             elif rcode == "MX10":
@@ -7647,7 +7647,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[:5]
 
             elif rcode == "MX11":
@@ -7692,7 +7692,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (n1, n2, com)
                 
             elif rcode == "MX12":
@@ -7826,7 +7826,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (n1, n2, n3, f1, com)
                 
             elif rcode == "MX13":
@@ -8067,7 +8067,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (n1, n2, n3, n4, n5, f1, f2, f3, com)
                 
             elif rcode == "MX14":
@@ -8283,7 +8283,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (n1, n2, n3, n4, n5, f1, f2, com)
 
                 
@@ -8413,7 +8413,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % (n1, n2, f1, f2, com)
 
             elif "-1" in rtext[:5]:
@@ -8425,7 +8425,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
             elif rtext.startsWith(";") or rtext.startsWith("*"):
@@ -8437,7 +8437,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext
                 
         elif rcode == "MTXB":
@@ -8452,7 +8452,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%%2Fproj%%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>""" % rtext[6:]
 
 
@@ -8539,7 +8539,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
 
@@ -8571,7 +8571,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
 
@@ -8625,7 +8625,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                 
                             
@@ -8789,7 +8789,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                     
                     
@@ -8804,7 +8804,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                                 
                     
@@ -8872,7 +8872,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
                         
             
@@ -8913,7 +8913,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "BW":                                                          #Backwater
@@ -9043,7 +9043,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
 
@@ -9072,7 +9072,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "DZLI":
@@ -9086,7 +9086,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "NRZE":
@@ -9100,7 +9100,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "USBE":
@@ -9114,7 +9114,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "EPSA":
@@ -9127,7 +9127,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "EPSF":
@@ -9140,7 +9140,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
             if " EPSABS=" in rtext:
@@ -9161,7 +9161,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "NCMD":
@@ -9175,7 +9175,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a><br><br>"""
             
             if rtext.startsWith("NCMD"):
@@ -9500,7 +9500,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "FTAB":                                          #FTAB
@@ -9579,7 +9579,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode.startsWith("CULV"):                                 # CULVERT
@@ -9910,7 +9910,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "CHAR":                                          #CHANRAT
@@ -9997,7 +9997,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode.startsWith("EMBA"):                                 #EMBANKQ block
@@ -10156,7 +10156,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode.startsWith("EXPC"):                                        #EXPCON
@@ -10264,7 +10264,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "MULC":                                                 #MULCON
@@ -11080,7 +11080,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "QLIM":                                           #QCLIMIT
@@ -11103,7 +11103,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "SEWR":                                          #SEWER
@@ -11218,7 +11218,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "CRITQ":                                      #CRITQ
@@ -11286,7 +11286,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "GRIT":                                       #GRITTER
@@ -11326,7 +11326,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "MULP":                                       #MULPIPES
@@ -11422,7 +11422,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
             
         elif rcode == "XSIN":                                       #XSINTERP
@@ -11460,7 +11460,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "HEC2":                                       #HEC2X
@@ -11587,7 +11587,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "CHAN":                                       #CHANNEL
@@ -11640,7 +11640,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode == "UFGT":                                       #UFGATE
@@ -11751,7 +11751,7 @@ class DataContainer(object):
                         <a href ="http://il.water.usgs.gov/proj/feq/software/release_feq.txt"
                         target="_blank">Additional Release Notes</a>
                         <br><br>
-                        <a href ="http://il.water.usgs.gov/htdig/search-feq.html"
+                        <a href ="https://search.usa.gov/search?affiliate=usgs&sitelimit=il.water.usgs.gov%2Fproj%2Ffeq&query=&commit=Search"
                         target="_blank">Search Tool</a>"""
 
         elif rcode.startsWith("ORIF"):                                       #ORIFICE
