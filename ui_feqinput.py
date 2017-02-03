@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file ''
 #
-# Created: Mon Sep 14 09:53:47 2015
-#      by: PyQt4 UI code generator 4.11.3
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -1001,7 +999,6 @@ class Ui_FEQinput(object):
         self.menuHelp.addAction(self.actionFEQUTL_manual)
         self.menuHelp.addAction(self.actionFEQ_website)  # website
         self.menuView.addAction(self.actionMulti_line_Text)
-        self.menuView.addAction(self.actionMap_Mode)
         self.menuView.addAction(self.actionGraphs)
         self.menuProject.addAction(self.actionRun)
         self.menuProject.addAction(self.actionReload)
